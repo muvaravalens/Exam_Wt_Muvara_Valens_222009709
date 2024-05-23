@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .search-form {
+      float: left;
+      padding: 20px;
+    }
+
+    .form-control {
+      padding: 18px;
+      margin-left: 19px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      padding: 6px;
+      background-color:powderblue;
+      color: brown;
+      border: none;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 150px;
+      box-shadow: 4px 18px 18px 4px rgba(0,0,0,0.2);
+      left: 0;
+    }
+
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+
+    .dropdown-contents a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-contents a:hover {
+      background-color: #f1f1f1;
+    }
+
+    header {
+      background-color:orange;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    section {
+      padding: 28px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color:greenyellow;
+    }
+  </style>
+</head>
+<body style="background-image: url('./Images/4.jpg');">
+  <header>
+    <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 10px;">
+        <img src="./Images/b.jpg" width="90" height="60" alt="Logo">
+      </li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./home.html'">HOME</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./about.html'">ABOUT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./contact.html'">CONTACT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./client.php'">CLIENT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./project.php'">PROJECT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./asset.php'">ASSET</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./campaign.php'">CAMPAIGN</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./team.php'">TEAM</button></li>
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color: white; background-color: pink; text-decoration: none; margin-right: 20px;" onclick="toggleSettings()">Settings</a>
+        <div class="dropdown-contents" id="settingsDropdown">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    </header>
+
+<section>
+  <h2 style="color: blue;"><u>OUR MISSION TO SYSTEM</u></h2>
+  <h1>About Us</h1>
+  <p>We have different kinds of products. We assist businesses with developing brands by creating brand strategies, defining brand identity, developing brand messaging elements such as logos and packaging, and implementing brand guidelines. We also provide advice to those who want to learn about the business through trainings. We work with different partners to provide good quality service. We provide reliable certificates to those who want to learn about our service. We work in different areas around the country.</p>
+
+  <h1>Our Mission</h1>
+  <p>Our mission is to provide good quality service to our customers, to give them a warranty of 1 year in case of damage, and to expand our business due to opening different branches.</p>
+</section>
+
+<footer>
+    <!-- Your footer content goes here -->
+  </footer>
+
+  <script>
+    function toggleSettings() {
+      var dropdownContents = document.getElementById('settingsDropdown');
+      dropdownContents.style.display = dropdownContents.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg, Designer by: @MUVARA Valens</h2></b>
+  </center>
+</footer>
+</body>
+</html>
+</body>
+</html>

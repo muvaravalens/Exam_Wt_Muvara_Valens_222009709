@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .search-form {
+      float: left;
+      padding: 20px;
+    }
+
+    .form-control {
+      padding: 18px;
+      margin-left: 19px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      padding: 6px;
+      background-color:powderblue;
+      color: brown;
+      border: none;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 150px;
+      box-shadow: 4px 18px 18px 4px rgba(0,0,0,0.2);
+      left: 0;
+    }
+
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+
+    .dropdown-contents a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-contents a:hover {
+      background-color: #f1f1f1;
+    }
+
+    header {
+      background-color:orange;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    section {
+      padding: 28px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color:greenyellow;
+    }
+  </style>
+</head>
+<body style="background-image: url('./Images/p.jpg');">
+  <header>
+    <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 10px;">
+        <img src="./Images/b.jpg" width="90" height="60" alt="Logo">
+      </li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./home.html'">HOME</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./about.html'">ABOUT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./contact.html'">CONTACT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./client.php'">CLIENT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./project.php'">PROJECT</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./asset.php'">ASSET</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./campaign.php'">CAMPAIGN</button></li>
+      <li style="display: inline; margin-right: 10px;"><button type="button" onclick="location.href='./team.php'">TEAM</button></li>
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color: white; background-color: pink; text-decoration: none; margin-right: 20px;" onclick="toggleSettings()">Settings</a>
+        <div class="dropdown-contents" id="settingsDropdown">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+</header>
+<section>
+  <h2><bold><u> OUR CONTACT US</u></bold></h2>
+<ul></ul>
+  <li>Address: At kigali  Kicukiro KG275</li>
+  <li>Phone: +250 781737965</li>
+  <li>Email: brandconsultance@gmail.com</li>
+</ul>
+
+<form action="submit_contact" method="POST">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+   <p>Connect with us on social media or social networking platforms:
+      <a href="https://www.twitter.com/propertymangement">Twitter</a>
+      <a href="https://www.facebook.com/propertymangement">Facebook</a>
+      <a href="https://www.instagram.com/propertymangement">Instagram</a>
+      <a href="https://www.linkedin.com/propertymangement">LinkedIn</a>
+    </p>
+</section>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg, Designer by: @MUVARA Valens</h2></b>
+  </center>
+</footer>
+
+</body>
+</html>

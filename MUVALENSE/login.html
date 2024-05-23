@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Document type declaration indicating an HTML5 document and specifying language -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>User Login</title>
+</head>
+
+<body style="background-image: url('./Images/v.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <!-- Inline style to set body background color and related attributes -->
+        <!-- Centering content, although the <center> tag is deprecated in HTML5, it's used here -->
+    <center>
+        <h2 style="background-color: skyblue; width: 500px; height: 50px;">Login Form</h2>
+
+        <!-- Form for user login with a POST request, sent to 'login.php' -->
+
+        <form action="login.php" method="post" style="background-color: beige; width: 500px; height: 200px;">
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            <p style="font-size: 20px;"><a href="resetpassword.php">Forgot Password?</a></p>
+
+            <!-- Submit button to send form data -->
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+
+            <!-- Paragraph offering the option to create a new account, with a link to the registration page -->
+            <p style="font-size: 20px;"><i>Don't you have an account?</i> 
+                <a href="register.html">Create New Account</a>
+            </p>
+        </form>
+    
+    </center>
+</body>
+</html>

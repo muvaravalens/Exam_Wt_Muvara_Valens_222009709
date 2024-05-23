@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script>
+        // JavaScript function to confirm form reset
+        function confirmReset() {
+            return confirm('Are you sure you want to reset the form?');
+        }
+    </script>
+</head>
+
+<body style="background-image: url('./Images/o.jpg');">
+    <center>
+        <h2>Registration Form</h2>
+        <form action="register.php" method="post">
+
+            <label for="user_id">User ID:</label>
+            <input type="number" id="user_id" name="user_id" placeholder="user_id" required><br><br>
+           
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required><br><br>
+
+            <!-- Field for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+
+            <!-- Field for email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Field for password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <!-- Submit button to send the form data -->
+            <input type="submit" name="register" value="Register">
+
+            <!-- Reset button to clear all form inputs, with confirmation -->
+            <input type="reset" name="cancel" value="Cancel" onclick="return confirmReset();">
+        </form>
+    </center>
+</body>
+</html>
